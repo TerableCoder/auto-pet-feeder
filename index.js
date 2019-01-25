@@ -27,7 +27,7 @@ module.exports = function AutoPetFeeder(dispatch) {
     
     dispatch.hook('C_PLAYER_LOCATION', 5, (event) => { playerLocation = event.loc; });
     
-    dispatch.hook('S_INVEN', 16, { order: -10 }, (event) => {
+    dispatch.hook('S_INVEN', 17, { order: -10 }, (event) => {
         if (!enabled) return;
 
         let tempInv = event.items;
